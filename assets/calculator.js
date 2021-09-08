@@ -57,6 +57,13 @@ function performCalculation() {
   }
 
   calculator.displayNumber = result;
+
+  const history = {
+    firstNumber: calculator.firstNumber,
+    secondNumber: calculator.displayNumber,
+    operator: calculator.operator,
+    result: result
+  };
 };
  
 const buttons = document.querySelectorAll('.button');
