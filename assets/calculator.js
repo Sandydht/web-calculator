@@ -30,6 +30,12 @@ for (let button of buttons) {
   button.addEventListener('click', (event) => {
     const target = event.target;
 
+    if (target.classList.contains('clear')) {
+      clearCalculator();
+      updateDisplay();
+      return;
+    }
+
     inputDigit(target.innerText);
     updateDisplay();
   });
