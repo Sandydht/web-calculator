@@ -95,4 +95,8 @@ tr:nth-child(event) {
   .button {
     padding: 10px;
   }
+
+  .history {
+    width: 100%;
+  }
 }
