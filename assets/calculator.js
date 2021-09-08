@@ -43,7 +43,7 @@ for (let button of buttons) {
     }
 
     if (target.classList.contains('equals')) {
-      performCalculator();
+      performCalculation();
       updateDisplay();
       return;
     }
