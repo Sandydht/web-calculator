@@ -21,4 +21,12 @@ function inputDigit(digit) {
 };
 
 const buttons = document.querySelectorAll('.button');
-console.log(buttons);
+
+for (let button of buttons) {
+  button.addEventListener('click', (event) => {
+    const target = event.target;
+
+    inputDigit(target.innerText);
+    updateDisplay();
+  });
+};
