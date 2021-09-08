@@ -1,7 +1,7 @@
 const CACHE_KEY = 'calculation_history';
 
 function checkForStorage() {
-  return typeof (Storage) !== 'undefined';
+  return typeof(Storage) !== 'undefined';
 };
 
 function putHistory(data) {
@@ -13,7 +13,7 @@ function putHistory(data) {
       historyData = JSON.parse(localStorage.getItem(CACHE_KEY));
     }
 
-    historyData.unShift(data);
+    historyData.unshift(data);
 
     if (historyData.length > 5) {
       historyData.pop();
