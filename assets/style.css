@@ -75,6 +75,21 @@ table {
   border: 1px solid #ddd;
 }
 
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+
+th {
+  background-color: orange;
+  color: white;
+}
+
+tr:nth-child(event) {
+  background-color: #d2d2d2;
+}
+
 /* Media query */
 @media screen and (max-width: 513px) {
   .button {
