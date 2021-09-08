@@ -31,6 +31,18 @@ function inverseNumber() {
   calculator.displayNumber = calculator.displayNumber * -1;
 };
 
+function handleOperator(operator) {
+  if (!calculator.waitingForSecondNumber) {
+    calculator.operator = operator;
+    calculator.waitingForSecondNumber = true;
+    calculator.firstNumber = calculator.displayNumber;
+
+    calculator.displayNumber = '0';
+  } else {
+    alert('Operator sudah ditetapkan');
+  }
+};
+ 
 const buttons = document.querySelectorAll('.button');
 
 for (let button of buttons) {
