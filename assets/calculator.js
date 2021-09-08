@@ -19,3 +19,6 @@ function clearCalculator() {
 function inputDigit(digit) {
   calculator.displayNumber += digit;
 };
+
+const buttons = document.querySelectorAll('.button');
+console.log(buttons);
