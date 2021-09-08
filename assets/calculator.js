@@ -42,6 +42,12 @@ for (let button of buttons) {
       return;
     }
 
+    if (target.classList.contains('equals')) {
+      performCalculator();
+      updateDisplay();
+      return;
+    }
+
     inputDigit(target.innerText);
     updateDisplay();
   });
