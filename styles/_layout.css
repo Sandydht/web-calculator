@@ -1,0 +1,19 @@
+.grid-container {
+  max-width: 375px;
+  max-height: 661px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.grid-col-2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.grid-col-4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}

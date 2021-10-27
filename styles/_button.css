@@ -1,0 +1,35 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 15px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button-primary {
+  background-color: #F1F3F6;
+  color: #323531;
+}
+
+.button-primary:active {
+  box-shadow: inset 10px 10px 15px 0 rgba(55, 84, 170, 10%), 
+              inset -5px -5px 10px 0 rgba(255, 255, 255, 100%);
+}
+
+.button-secondary {
+  background-color: #323531;
+  color: #F1F3F6;
+}
+
+.button-secondary:active {
+  box-shadow: inset 10px 10px 15px 0 rgba(0, 0, 0, 25%), 
+              inset -5px -5px 10px 0 rgba(50, 53, 49, 100%);
+}
