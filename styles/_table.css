@@ -1,0 +1,32 @@
+.history {
+  max-width: 768px;
+  border-radius: 15px;
+  overflow: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+
+th {
+  background-color: #323531;
+  color: white;
+}
+
+tr:nth-child(event) {
+  background-color: transparent;
+}
