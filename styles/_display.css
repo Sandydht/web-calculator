@@ -1,0 +1,42 @@
+.display {
+  overflow: auto;
+  font-weight: bold;
+  font-family: 'Digital Numbers', sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.display-primary {
+  background: #F1F3F6;
+  border-radius: 15px;
+  padding: 10px;
+  min-height: 120px;
+}
+
+.display-secondary {
+  background: linear-gradient(94.52deg, #CCD5C6 0%, #B2BFA7 100%);
+  border: 2px solid #969C91;
+  border-radius: 10px;
+  color: #323531;
+  padding: 0 20px;
+}
+
+.display::-webkit-scrollbar {
+  width: 5px;
+}
+
+.display::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.display::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.display::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
