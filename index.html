@@ -9,6 +9,49 @@
 </head>
 
 <body>
+  <main>
+    <div class="grid-container">
+      <div class="grid-col-4 display display-primary neomorphism-primary">
+        <div class="display display-secondary neomorphism-primary">
+          <p id="displayNumber" class="text">0</p>
+        </div>
+      </div>
+
+      <button class="button button-primary neomorphism-primary">7</button>
+      <button class="button button-primary neomorphism-primary">8</button>
+      <button class="button button-primary neomorphism-primary">9</button>
+      <button id="negative" class="button button-secondary neomorphism-primary">+/-</button>
+
+      <button class="button button-primary neomorphism-primary">4</button>
+      <button class="button button-primary neomorphism-primary">5</button>
+      <button class="button button-primary neomorphism-primary">6</button>
+      <button id="operator" class="button button-secondary neomorphism-primary">-</button>
+
+      <button class="button button-primary neomorphism-primary">1</button>
+      <button class="button button-primary neomorphism-primary">2</button>
+      <button class="button button-primary neomorphism-primary">3</button>
+      <button id="operator" class="button button-secondary neomorphism-primary">+</button>
+
+      <button id="clear" class="button button-primary neomorphism-primary">CE</button>
+      <button class="button button-primary neomorphism-primary">0</button>
+      <button id="equals" class="grid-col-2 button button-secondary neomorphism-primary">=</button>
+    </div>
+
+    <div class="history neomorphism-primary">
+      <h2>Riwayat Perhitungan</h2>
+      <table class="neomorphism-primary">
+        <thead>
+          <tr>
+            <th>Angka Pertama</th>
+            <th>Operator</th>
+            <th>Angka Kedua</th>
+            <th>Hasil</th>
+          </tr>
+        </thead>
+        <tbody id="historyList"></tbody>
+      </table>
+    </div>
+  </main>
 
 </body>
 
